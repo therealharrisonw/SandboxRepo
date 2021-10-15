@@ -12,28 +12,26 @@ public class HandController : MonoBehaviour
     [SerializeField]
     GameObject teleportGameObject;
     [SerializeField]
-    InputActionReference teleportActivationRefrence;
+    InputActionReference teleportActivationReference;
 
     public UnityEvent onTeleportActivate;
     public UnityEvent onTeleportCancel;
     // Start is called before the first frame update
     void Start()
     {
-        teleportActivationRefrence.action.performed += teleportModeActivate;
-        teleportActivationRefrence.action.canceled += teleportModeCancel;
+        teleportActivationReference.action.performed += TeleportModeActivate;
+        teleportActivationReference.action.canceled += TeleportModeCancel;
     }
 
-    private void teleportModeCancel(InputAction.CallbackContext obj)
+    private void TeleportModeCancel(InputAction.CallbackContext obj)
     {
         Invoke("DeactivateTeleporter", 0.1f);
     }
-
     void DeactivateTeleporter()
     {
         onTeleportCancel.Invoke();
     }
-
-    private void teleportModeActivate(InputAction.CallbackContext obj)
+    private void TeleportModeActivate(InputAction.CallbackContext obj)
     {
         onTeleportActivate.Invoke();
     }
