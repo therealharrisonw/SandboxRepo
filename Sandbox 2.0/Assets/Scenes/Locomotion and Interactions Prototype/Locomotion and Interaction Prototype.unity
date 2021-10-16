@@ -703,7 +703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657164563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6023884, y: 0.843064, z: 2.8003752}
+  m_LocalPosition: {x: 3.6023884, y: 2.06, z: 2.8003752}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 631517493}
@@ -740,7 +740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6bf904e410ee8479f9093d8830d1f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LocomotionProvider: {fileID: 0}
+  m_LocomotionProvider: {fileID: 657164569}
   m_MinHeight: 0
   m_MaxHeight: Infinity
 --- !u!114 &657164568
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 657164570}
-  m_TurnSpeed: 60
+  m_TurnSpeed: 45
   m_LeftHandTurnAction:
     m_UseReference: 1
     m_Action:
