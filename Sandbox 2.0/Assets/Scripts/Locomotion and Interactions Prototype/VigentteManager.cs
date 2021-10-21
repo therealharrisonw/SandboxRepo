@@ -9,37 +9,37 @@ using System;
 public class VigentteManager : MonoBehaviour
 {
     [SerializeField]
-    float intesnity = 0.75f;
+    float intesnity = 0.75f; //how intense the vignette is 
     [SerializeField]
-    float duration = 0.5f;
+    float duration = 0.5f; //how long the vignette takes to appear and disappear 
     [SerializeField]
     private Volume volume;
     Vignette vignette;
     [SerializeField]
-    InputActionReference continuousMove;
+    InputActionReference continuousMove; //prepares it to check for continous moevement later
     // Start is called before the first frame update
     private void Awake()
     {
-        continuousMove.action.performed += FadeIn;
-        continuousMove.action.canceled += FadeOut;
+        continuousMove.action.performed += FadeIn; //when continous movement starts fade in
+        continuousMove.action.canceled += FadeOut; //when continous movement ends fade out
 
-        if (volume.profile.TryGet(out Vignette vignette))
+        if (volume.profile.TryGet(out Vignette vignette)) 
         {
-            this.vignette = vignette;
+            this.vignette = vignette; //sets the vignette in script to the private vignette above. 
         }
     }
 
-    private void FadeIn(InputAction.CallbackContext obj)
+    private void FadeIn(InputAction.CallbackContext obj) //method for fading in 
     {
-        if (obj.ReadValue<Vector2>() != Vector2.zero)
+        if (obj.ReadValue<Vector2>() != Vector2.zero) //if control stick is not on 0 then run this 
         {
-            StartCoroutine(Fade(intesnity, 0));
+            StartCoroutine(Fade(intesnity, 0)); //tells it to start the fade in 
         }
     }
 
-    private void FadeOut(InputAction.CallbackContext obj)
+    private void FadeOut(InputAction.CallbackContext obj) //if control stick is on 0 then run this
     {
-        StartCoroutine(Fade(0, intesnity));
+        StartCoroutine(Fade(0, intesnity)); //tells the fade in to stop
     }
 
     IEnumerator Fade(float startValue, float endValue)
