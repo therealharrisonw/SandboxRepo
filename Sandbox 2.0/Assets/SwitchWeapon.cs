@@ -5,11 +5,12 @@ using UnityEngine.InputSystem;
 
 public class SwitchWeapon : MonoBehaviour
 {
+    public InputActionReference SwitchWeapons = null;
     public int selectedWeapon = 0;
     // Start is called before the first frame update
     void Start()
     {
-        Selectweapon();
+        
     }
 
     private void Selectweapon()
@@ -26,12 +27,18 @@ public class SwitchWeapon : MonoBehaviour
                 weapon.gameObject.SetActive(false);
             }
             i++;
+
+            if (i == 3)
+            {
+                i = 0;
+            }
         }
     }
 
     // Update is called once per frame
-    void Update()
+    void OnSwitchWeapons()
     {
+        Debug.Log("Switched");
         
     }
 }

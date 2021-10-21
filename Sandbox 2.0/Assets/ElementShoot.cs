@@ -12,9 +12,8 @@ public class ElementShoot : MonoBehaviour
     [SerializeField]
     GameObject lightningOrb;
     [SerializeField]
-    GameObject fireball;
-    [SerializeField]
     Transform spwnpoint;
+    private bool element = true; 
     // Start is called before the first frame update
     void Awake()
     {
@@ -24,8 +23,20 @@ public class ElementShoot : MonoBehaviour
 
     private void SpawnElements(ActivateEventArgs arg0)
     {
-        Instantiate(waterOrb, spwnpoint.position, Quaternion.identity);
-        Instantiate(lightningOrb, spwnpoint.position, Quaternion.identity);
-        Instantiate(fireball, spwnpoint.position, Quaternion.identity);
+        if (element)
+        {
+            Instantiate(waterOrb, spwnpoint.position, Quaternion.identity);
+            element = false;
+        }
+        else
+        {
+            Instantiate(lightningOrb, spwnpoint.position, Quaternion.identity);
+            element = true;
+        }
+        
+        
     }
+
+    
+    
 }
