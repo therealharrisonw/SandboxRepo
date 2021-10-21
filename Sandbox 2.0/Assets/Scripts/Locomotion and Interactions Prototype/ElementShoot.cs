@@ -6,13 +6,13 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ElementShoot : MonoBehaviour
 {
-    XRGrabInteractable GI;
+    XRGrabInteractable GI; //used for refrencing grab interacatables
     [SerializeField]
-    GameObject waterOrb;
+    GameObject waterOrb; //allows me to set the gameobject to be spawned for waterOrb
     [SerializeField]
-    GameObject lightningOrb;
+    GameObject lightningOrb;//allows me to set the gameobject to be spawned for lightning orb
     [SerializeField]
-    Transform spwnpoint;
+    Transform spwnpoint; //allows me to set the transform for the orbs to spawn out of the end of the gun.
     private bool element = true; 
     // Start is called before the first frame update
     void Awake()
