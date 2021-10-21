@@ -25,7 +25,7 @@ public class ElementShoot : MonoBehaviour
     private void SpawnElements(ActivateEventArgs arg0)
     {
         Instantiate(waterOrb, spwnpoint.position, Quaternion.identity);
-        //Instantiate(lightningOrb, spwnpoint.position, Quaternion.identity);
-        //Instantiate(fireball, spwnpoint.position, Quaternion.identity);
+        Instantiate(lightningOrb, spwnpoint.position, Quaternion.identity);
+        Instantiate(fireball, spwnpoint.position, Quaternion.identity);
     }
 }
