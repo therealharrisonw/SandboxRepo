@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class handManager : MonoBehaviour
 {
    
-    public GameObject baseControllerObject;
+    public GameObject baseControllerObject; //tells the input system to match with the hand controller added to it
     
     
 }
