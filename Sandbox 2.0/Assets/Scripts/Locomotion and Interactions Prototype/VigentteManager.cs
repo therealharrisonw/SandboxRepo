@@ -44,16 +44,16 @@ public class VigentteManager : MonoBehaviour
 
     IEnumerator Fade(float startValue, float endValue)
     {
-        float elapsedTime = 0.0f;
-        float blend = elapsedTime / duration;
+        float elapsedTime = 0.0f; //float for how much time hads elapsed
+        float blend = elapsedTime / duration; //blends elapsed time and duration time into one number
         float intesnity = Mathf.Lerp(startValue, endValue, blend);
-        ApplyValue(intesnity);
+        ApplyValue(intesnity); //applys the intesity value.
         yield return null;
     }
 
     void ApplyValue(float value)
     {
-        vignette.intensity.Override(value);
+        vignette.intensity.Override(value); //overrides the value of the vignette intensity 
     }
 
    
