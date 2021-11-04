@@ -154,14 +154,6 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "SwitchWeapon",
-                    "type": "Button",
-                    "id": "e2efb80a-32b6-4039-b68c-f64402c910a3",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -483,17 +475,6 @@
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "23274129-4c8c-4fd4-8907-0396b9d587fa",
-                    "path": "<XRController>{LeftHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Continuous Move;Generic XR Controller",
-                    "action": "SwitchWeapon",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -602,14 +583,6 @@
                     "type": "Value",
                     "id": "6f7cf253-7062-443b-b10f-2be48a33f027",
                     "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "SwitchWeapon",
-                    "type": "Button",
-                    "id": "28722647-31c0-4641-bafa-82245ea01ed5",
-                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -925,23 +898,39 @@
                 },
                 {
                     "name": "",
-                    "id": "deb7150b-58a2-4027-8dde-938d8fe7a6a9",
-                    "path": "<XRController>{RightHand}/primaryButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SwitchWeapon",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "eaf747ea-b622-452f-9cfe-cbf786c10405",
                     "path": "<XRController>{RightHand}/primary2DAxis",
                     "interactions": "",
                     "processors": "StickDeadzone",
                     "groups": "Continuous Move",
                     "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "SecondaryButton",
+            "id": "4b0c2dc7-d028-403f-8425-ace41d60c825",
+            "actions": [
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "706e61fd-6fd5-41c2-813d-b19383e63674",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e5d01833-d2a1-4841-a633-e866e32a06d8",
+                    "path": "<XRController>/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
