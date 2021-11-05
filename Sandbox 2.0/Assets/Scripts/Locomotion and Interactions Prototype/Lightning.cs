@@ -7,14 +7,13 @@ public class Lightning : MonoBehaviour
     Rigidbody rBody; //targets the rigidbody on the lightning or zap orb.
     float speed = 10.0f; //float for how fast the orb leaves the gun
     float lifespan = 0.5f; //float for how long the orb stays before despawning 
-   
+
     void Start()
     {
         rBody = GetComponent<Rigidbody>(); //tells the script to get the components off of rigidbody.
         rBody.AddForce(Vector3.forward * speed, ForceMode.VelocityChange); //adds forward force to the orb 
-        rBody.AddForce(Vector3.down * (speed / 2), ForceMode.VelocityChange); //adds downward force to the orb
-    }
 
+    }
     
     void Update()
     {

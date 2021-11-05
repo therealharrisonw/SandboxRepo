@@ -12,7 +12,7 @@ public class WaterOrb : MonoBehaviour
     {
         rBody = GetComponent<Rigidbody>(); //tells the script to get the components off of rigidbody.
         rBody.AddForce(Vector3.forward * speed, ForceMode.VelocityChange); //adds forward force to the orb 
-        rBody.AddForce(Vector3.down * (speed / 2), ForceMode.VelocityChange); //adds downward force to the orb
+       
     }
 
     // Update is called once per frame
