@@ -5,7 +5,7 @@ using TMPro;
 
 public class TimeScript : MonoBehaviour
 {
-    private float regulartime = 120f;
+    private float regulartime = 120;
     [SerializeField]
     private TextMeshProUGUI timetext;
     // Start is called before the first frame update
