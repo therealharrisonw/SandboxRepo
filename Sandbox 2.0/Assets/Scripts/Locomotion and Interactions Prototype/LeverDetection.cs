@@ -12,6 +12,7 @@ public class LeverDetection : MonoBehaviour
     private void Start()
     {
         hJoint = GetComponent<HingeJoint>(); //teels the hinge joint to take that information
+        checkLever();
     }
 
     private void checkLever()
