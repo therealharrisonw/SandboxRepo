@@ -20,7 +20,7 @@ public class TimeScript : MonoBehaviour
         if(regulartime > 0)
         {
             regulartime -= 1 * Time.deltaTime;
-            timetext.text = regulartime.ToString();
+            timetext.text = ((int)regulartime).ToString();
         }
     }
 }

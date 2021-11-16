@@ -297,7 +297,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!59 &17337020
 HingeJoint:
@@ -2651,13 +2651,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563507045}
-  m_LocalRotation: {x: -0.557602, y: -0.3495909, z: -0.26486132, w: 0.70478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.14664671, y: -0.44692075, z: 0.6514331}
   m_LocalScale: {x: -3.7207463, y: 0.39096102, z: 0.17620707}
   m_Children: []
   m_Father: {fileID: 765259312}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -76.206, y: -55.883, z: 3.975}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &563507047
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2677,8 +2677,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3679278, y: 0.3114633, z: 0.71332633}
-  m_Center: {x: -0.149838, y: 0.41639632, z: 0.059003405}
+  m_Size: {x: 0.16116725, y: 0.18049842, z: 4.599176}
+  m_Center: {x: -0.046457388, y: -0.067434415, z: -3.6278667}
 --- !u!1001 &627127962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2819,7 +2819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657164563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.23, y: 0.52, z: -0.02}
+  m_LocalPosition: {x: 28.61, y: 3.27, z: -14.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 631517493}
@@ -3155,7 +3155,7 @@ GameObject:
   - component: {fileID: 765259309}
   - component: {fileID: 765259308}
   - component: {fileID: 765259307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6772,7 +6772,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!59 &1826164129
 HingeJoint:
@@ -6786,7 +6786,7 @@ HingeJoint:
   m_Anchor: {x: -0.36, y: -0.51, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.12554029, y: 0.0075757504, z: -0.51521623}
+  m_ConnectedAnchor: {x: 0.12554029, y: 0.03030309, z: -0.51521623}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -6799,8 +6799,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -45
-    max: 54.080692
+    min: 5
+    max: 50
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0

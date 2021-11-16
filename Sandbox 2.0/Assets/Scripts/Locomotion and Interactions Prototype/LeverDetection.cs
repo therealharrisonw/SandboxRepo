@@ -12,13 +12,14 @@ public class LeverDetection : MonoBehaviour
     private void Start()
     {
         hJoint = GetComponent<HingeJoint>(); //teels the hinge joint to take that information
-        checkLever();
+        
     }
 
-    private void checkLever()
+    private void Update()
     {
-        if (hJoint.angle == hJoint.limits.max)
+        if (hJoint.angle == hJoint.limits.min)
         {
+            Debug.Log("Do you work?");
             levergang.Invoke();
         }
     }
