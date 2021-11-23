@@ -8,6 +8,12 @@ public class LeverDetection : MonoBehaviour
     [SerializeField]
     private UnityEvent levergang;
      HingeJoint hJoint;
+    bool lever1 = false;
+    bool lever2 = false;
+    bool lever3 = false;
+    bool lever4 = false;
+    [SerializeField]
+    private UnityEvent finalDoor;
 
     private void Start()
     {
@@ -19,10 +25,17 @@ public class LeverDetection : MonoBehaviour
     {
         if (hJoint.angle == hJoint.limits.min)
         {
-            Debug.Log("Do you work?");
+            
             levergang.Invoke();
         }
+
+        if (lever1 == true && lever2 == true && lever3 == true && lever4 == true)
+        {
+            finalDoor.Invoke();
+        }
     }
+
+    
 
 }
 
