@@ -27,6 +27,7 @@ public class LeverDetection : MonoBehaviour
         {
             
             levergang.Invoke();
+            Debug.Log("Testing");
         }
 
         if (lever1 == true && lever2 == true && lever3 == true && lever4 == true)
